@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Налаштування поведінки в'юпорта -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 23</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header"> 
+			</header>
+			<main class="page">
+
+					<div class="page__container">
+						<h1 class="page__title">Домашня робота №23 JAVASCRIPT</h1>
+						<div class="page__items home-work">
+							<h2 class="home-work__title">Домашка №1 Операторы JAVASCRIPT. "2"+2=22. Уроки JAVASCRIPT с нуля 2020</h2>
+							<a target="_blank" href="https://www.youtube.com/watch?v=oSO_StIWaXM&ab_channel=%D0%A4%D1%80%D1%96%D0%BB%D0%B0%D0%BD%D1%81%D0%B5%D1%80%D0%BF%D0%BE%D0%B6%D0%B8%D1%82%D1%82%D1%8E" class="home-work__video"><img src="img/1.jpg" alt="video1"></a>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Варіант №1</h3>
+								<p class="item-work__example">
+									console.log('35' + - "22");<br><br>
+									Поверне 13.
+								</p>
+								<p class="item-work__answer">
+									Відповідь: НЕ ВІРНО. Поверне "35-23".
+								</p>
+							</div>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Варіант №2</h3>
+								<p class="item-work__example">
+									console.log('35' * "22");<br><br>
+									Поверне 770.
+								</p>
+								<p class="item-work__answer">
+									Відповідь: ВІРНО.
+								</p>
+							</div>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Варіант №3</h3>
+								<p class="item-work__example">
+									console.log('558' > 22++);<br><br>
+									Поверне true.
+								</p>
+								<p class="item-work__answer">
+									Відповідь:  НЕ ВІРНО. Поверне помилку. Інкремент використовується лише зі змінними.
+								</p>
+							</div>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Варіант №4</h3>
+								<p class="item-work__example">
+									let userCounter = 0;<br><br>
+									let newUsers = userCounter++;<br><br>
+									console.log(newUsers);<br><br>
+									Поверне 1.
+								</p>
+								<p class="item-work__answer">
+									Відповідь:  НЕ ВІРНО. Поверне 0. Інкремент написаний суфіксним записом. При такому записі видає першочергове значення.
+								</p>
+							</div>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Варіант №5</h3>
+								<p class="item-work__example">
+									console.log(!false && 11 || 18 && !'');<br><br>
+									Поверне 18
+								</p>
+								<p class="item-work__answer">
+									ідповідь:  НЕ ВІРНО. Поверне 11.
+								</p>
+							</div>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Варіант №6</h3>
+								<p class="item-work__example">
+									let name = 0;<br><br>
+									console.log(name ?? "Без імені")<br><br>
+									
+								</p>
+								<p class="item-work__answer">
+									Відповідь:  НЕ ВІРНО. Поверне 0. В кінці відсутня крапка з комою. Оператора ?? немає.
+								</p>
+							</div>
+						</div>
+						<div class="page__items home-work">
+							<h2 class="home-work__title">Домашка №2 IF ELSE в JAVASCRIPT. Условный оператор "?". Примеры IF ELSE. Уроки JAVASCRIPT с нуля 2020</h2>
+							<a target="_blank" href="https://www.youtube.com/watch?v=tFyRhDZgHaU&ab_channel=%D0%A4%D1%80%D1%96%D0%BB%D0%B0%D0%BD%D1%81%D0%B5%D1%80%D0%BF%D0%BE%D0%B6%D0%B8%D1%82%D1%82%D1%8E" class="home-work__video"><img src="img/2.jpg" alt="video2"></a>
+							<div class="home-work__item item-work">								
+								<h3 class="item-work__title">Варінт 1</h3>
+								
+								<p class="item-work__example">
+									if (1 === "1") {<br><br>
+										console.log('True!');<br><br>
+									} else {<br><br>
+										console.log('False!');<br><br>
+									}<br><br>
+									
+								</p>
+								<p class="item-work__answer">
+									Відповідь:  Поверне False!
+								</p>
+								
+							</div>
+							<div class="home-work__item item-work">								
+								<h3 class="item-work__title">Варінт 2</h3>
+								
+								<p class="item-work__example">
+									if (5 == "5") {<br><br>
+										console.log('True!');<br><br>
+									} else {<br><br>
+										console.log('False!');<br><br>
+									}<br><br>
+									
+								</p>
+								<p class="item-work__answer">
+									Відповідь:  Поверне True!.
+								</p>
+								
+							</div>
+							<div class="home-work__item item-work">								
+								<h3 class="item-work__title">Варінт 3</h3>
+								
+								<p class="item-work__example">
+									let message = (92 > '11' && 58 < 100) ? 'True!' : 'False!';<br><br>
+									console.log(message);<br><br>
+									
+								</p>
+								<p class="item-work__answer">
+									Відповідь: Поверне True!.
+								</p>
+								
+							</div>
+							<div class="home-work__item item-work">								
+								<h3 class="item-work__title">Варінт 4</h3>
+								
+								<p class="item-work__example">
+									if (0) {<br><br>
+										console.log('False!');<br><br>
+									} else if (" ") {<br><br>
+										console.log('True!');<br><br>
+									}<br><br>
+									
+								</p>
+								<p class="item-work__answer">
+									Відповідь:  Поверне True!.
+								</p>
+								
+							</div>
+				
+						</div>
+						<div class="page__items home-work">
+							<h2 class="home-work__title">Домашка №3 Циклы FOR и WHILE в JavaScript. Директивы break и continue. Уроки JAVASCRIPT с нуля 2020</h2>
+							<a target="_blank" href="https://www.youtube.com/watch?v=QjDzp-yM_To&ab_channel=%D0%A4%D1%80%D1%96%D0%BB%D0%B0%D0%BD%D1%81%D0%B5%D1%80%D0%BF%D0%BE%D0%B6%D0%B8%D1%82%D1%82%D1%8E" class="home-work__video"><img src="img/3.jpg" alt="video3"></a>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Задача №1</h3>
+								<p class="item-work__answer">
+									Вивести в консоль цифри від 1 до 5 всіма можливим способами.
+								</p>
+								<p class="item-work__example">
+									<span>// while</span><br><br>
+									let num = 1;<br><br>
+									while (num < 6) {<br><br>
+										console.log(num);<br><br>
+										num++;<br><br>
+									}<br><br>
+									
+								</p>
+								<p class="item-work__example">
+									<span>// do ... while</span><br><br>
+									let numOne = 1;<br><br>
+									do {<br><br>
+										console.log(numOne);<br><br>
+										numOne++;<br><br>
+									} while (numOne < 6);<br><br>
+									
+								</p>
+								<p class="item-work__example">
+									<span>// for</span><br><br>
+									for (let num = 1; num < 6; num++){<br><br>
+										console.log(num);<br><br>
+									} <br><br>
+									
+								</p>
+								
+							</div>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Задача №2</h3>
+								<p class="item-work__answer">
+									Останній результат 0, вірно?
+								</p>
+								<p class="item-work__example">
+									let numTwo = 8;<br><br>
+									while (numTwo) {<br><br>
+										console.log(numTwo);<br><br>
+										numTwo--;<br><br>
+									}<br><br>
+								</p>
+								<p class="item-work__answer">
+									Відповідь: НЕ ВІРНО. Останній результат 1.
+								</p>
+							</div>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Задача №3</h3>
+								<p class="item-work__answer">
+									Переписати на while
+								</p>
+								<p class="item-work__example">
+									let numThree = 0;<br><br>
+									while (numThree < 3) {<br><br>
+										console.log(`Число: ${numThree}`);<br><br>
+										numThree++;<br><br>
+									}<br><br>
+								</p>
+							
+							</div>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Задача №4</h3>
+								<p class="item-work__answer">
+									Зупинити роботу циклу №1 коли size дорівнює 1
+								</p>
+								<p class="item-work__example">
+									<span>//Цикл №1</span><br><br>
+									circleOne: for (let num = 0; num < 2; num++) {<br><br>
+									<span>//цикл №2r</span><br><br>
+										for (let size = 0; size < 3; size++) {<br><br>
+											if (size == 1) {<br><br>
+												break circleOne;<br><br>
+											}<br><br>
+											console.log(size);<br><br>
+										}<br><br>
+									}<br><br>
+								</p>
+								
+							</div>
+						</div>
+						<div class="page__items home-work">
+							<h2 class="home-work__title">Домашка № 4 Числа в JAVASCRIPT. Тип данных number. Работа с числами. проблема неточных вычислений.</h2>
+							<a target="_blank" href="https://www.youtube.com/watch?v=tiHvPGOX5yc&ab_channel=%D0%A4%D1%80%D1%96%D0%BB%D0%B0%D0%BD%D1%81%D0%B5%D1%80%D0%BF%D0%BE%D0%B6%D0%B8%D1%82%D1%82%D1%8E" class="home-work__video"><img src="img/4.jpg" alt="video4"></a>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Задача №1</h3>
+								<p class="item-work__answer">
+									Отримати вірне значення округлення
+								</p>
+								<p class="item-work__example">
+									let someNum = 1.005 + Number.EPSILON;<br><br>
+									let numberOne = Math.round(someNum* 100) / 100;<br><br>
+									console.log(numberOne);<br><br>
+								</p>
+								<p class="item-work__answer">
+									Відповідь: після додавання Number.EPSILON поверне число 1.01.
+								</p>
+							</div>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Задача №2</h3>
+								<p class="item-work__answer">
+									Отримати число 135.58 з строки
+								</p>
+								<p class="item-work__example">
+									let value = "135.58px";<br><br>
+									console.log(parseFloat(value));<br><br>
+								</p>
+								<p class="item-work__answer">
+									Відповідь: використовуємо для цього parseFloat(value).
+								</p>
+							</div>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Задача №3</h3>
+								<p class="item-work__answer">
+									Побудувати вірну умову розгалуження
+								</p>
+								<p class="item-work__example">
+									let valueOne = 58 + "Фрілансер";<br><br>
+									if (isNaN(valueOne)) {<br><br>
+										console.log('Результат виразу NaN');<br><br>
+									}<br><br>
+								</p>
+								<p class="item-work__answer">
+									Відповідь: використовуємо перевірку isNaN.
+								</p>
+							</div>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Задача №4</h3>
+								<p class="item-work__answer">
+									Знайти максимальне число з 10, 58, 39, -150, 0
+								</p>
+								<p class="item-work__example">
+									console.log(Math.max(10, 58, 39, -150, 0));<br><br>
+								</p>
+								<p class="item-work__answer">
+									Відповідь: використовуємо матиматичну функцію Math.max().
+								</p>
+							</div>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Задача №5</h3>
+								<p class="item-work__answer">
+									Округлити число 58.858 до чила 58
+								</p>
+								<p class="item-work__example">
+									console.log(Math.floor(58.858));<br><br>
+								</p>
+								<p class="item-work__answer">
+									Відповідь: використовуємо матиматичну функцію Math.floor(). 
+								</p>
+							</div>
+						</div>
+						<div class="page__items home-work">
+							<h2 class="home-work__title">Домашка № 5 Строки в JAVASCRIPT. Тип данных string. Типы кавычек, поиск, регистр и получение подстроки.</h2>
+							<a target="_blank" href="https://www.youtube.com/watch?v=jc5Upe8xIN0&ab_channel=%D0%A4%D1%80%D1%96%D0%BB%D0%B0%D0%BD%D1%81%D0%B5%D1%80%D0%BF%D0%BE%D0%B6%D0%B8%D1%82%D1%82%D1%8E" class="home-work__video"><img src="img/5.jpg" alt="video5"></a>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Задача №1</h3>
+								<p class="item-work__answer">
+									Чи вірний запис? Очікується відповідь Привіт! Я фрілансер
+								</p>
+								<p class="item-work__example">
+									let fls = "фрілансер";<br><br>
+									let text = 'Привіт! Я ${fls}';<br><br>
+									console.log(text);<br><br>
+								</p>
+								<p class="item-work__answer">
+									Відповідь: запис не вірний. Використані не зворотні лапки.
+								</p>
+							</div>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Задача №2</h3>
+								<p class="item-work__answer">
+									Отримати символ "н" строки
+								</p>
+								<p class="item-work__example">
+									let textOne = 'фрілансер';<br><br>
+									console.log(textOne[5]);<br><br>
+								</p>
+								<p class="item-work__answer">
+									Відповідь: використовуємо квадратні дужки та порядковий номер букви у строці.
+								</p>
+							</div>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Задача №3</h3>
+								<p class="item-work__answer">
+									Вірно? очікуємо на 579
+								</p>
+								<p class="item-work__example">
+									let textTwo = 123 + "456";<br><br>
+									console.log(textTwo);<br><br>
+								</p>
+								<p class="item-work__answer">
+									Відповідь: не вірно. Результат 123456.
+								</p>
+							</div>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Задача №4</h3>
+								<p class="item-work__answer">
+									Отримати строку у верхньому регістрі
+								</p>
+								<p class="item-work__example">
+									let textThree = 'фрілансер';<br><br>
+									console.log(textThree.toLocaleUpperCase());<br><br>
+								</p>
+								<p class="item-work__answer">
+									Відповідь: використовуємо функцію toLocaleUpperCase().
+								</p>
+							</div>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Задача №5</h3>
+								<p class="item-work__answer">
+									отримати підстроку 'лан' із
+								</p>
+								<p class="item-work__example">
+									let textFour = 'фрілансер';<br><br>
+									console.log(textFour.slice(3, 6));<br><br>
+								</p>
+								<p class="item-work__answer">
+									Відповідь: використовуємо функцію slice().
+								</p>
+							</div>
+							<div class="home-work__item item-work">
+								<h3 class="item-work__title">Задача №6</h3>
+								<p class="item-work__answer">
+									true чи false?
+								</p>
+								<p class="item-work__example">
+									let textFive = 'фрілансер';<br><br>
+									console.log(textFive.includes('лан', 4));<br><br>
+								</p>
+								<p class="item-work__answer">
+									Відповідь: false.
+								</p>
+							</div>
+						</div>
+					</div>
+			
+			
+			</main>
+			<footer class="footer">
+			</footer>
+		</div>
+		<script src="js/script.js">	</script>
+	</body>
+</html>
